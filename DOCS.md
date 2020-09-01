@@ -1,16 +1,35 @@
-# API Reference
+# SDK Reference
 
-The official Rest API Reference is [available here](http://docs.africastalking.com).
+## Contents
 
-## Notes/Links
+- [What can I import from the package?](#What-can-i-import-from-the-package)
+- [Initialize the Africa's Talking Client](#initializing-a-client)
+- [Client Methods](#client-methods)
+
+## What can I import from the package?
+
+You can import the following functions, classes and Typescript types from the package:
+
+- Client
+- ActionBuilder
+- CONSTANTS
+- Types for Typescript e.g. `SmsResponse`, `SendAirtimeResponse`, etc;
+
+```ts
+import { Client, ActionBuilder, CONSTANTS, SmsResponse, SendAirtimeResponse } from 'africastalking-ts';
+
+// or
+const { Client, ActionBuilder, CONSTANTS, SmsResponse, SendAirtimeResponse } = require('africastalking-ts').
+```
+
+### Notes
 
 - All methods are asynchronous.
 - All phone numbers use the international format. e.g. `+234xxxxxxxx`.
-- [What else can I import from the package, apart from `Client`?](#what-else-can-i-import-from-the-package-apart-from-client)
 
-## Initialize the AfricasTalking Client
+## Initializing a Client
 
-You need your app username and your API key to create a new AfricasTalking Client, both of which you can get from the [dashboard](https://account/africastalking.com).
+You need your app username and your API key to create a new Africa's Talking Client, both of which you can get from the [dashboard](https://account/africastalking.com).
 
 > You can use this SDK for either production or sandbox apps. For sandbox, the app username is **ALWAYS** `sandbox`
 
@@ -1086,19 +1105,3 @@ client.uploadMediaFile({
 ```
 
 For more information, please read [http://docs.africastalking.com/voice](http://docs.africastalking.com/voice).
-
-## What else can I import from the package, apart from `Client`?
-
-You can import the following functions, classes and Typescript types from the package:
-
-- Client
-- ActionBuilder
-- CONSTANTS
-- Types for Typescript e.g. `SmsResponse`, `SendAirtimeResponse`, etc;
-
-```ts
-import { Client, ActionBuilder, CONSTANTS, SmsResponse, SendAirtimeResponse } from 'africastalking-ts';
-
-// or
-const { Client, ActionBuilder, CONSTANTS, SmsResponse, SendAirtimeResponse } = require('africastalking-ts').
-```

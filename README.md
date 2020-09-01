@@ -1,111 +1,36 @@
-###**_IMPORTANT NOTE_**
-
-**The new version of this SDK is a breaking version. [Read here](#notes) for more info.**
-
-# Africa's Talking Node.js SDK - Typescript Version
-
-[![NPM](https://nodei.co/npm/africastalking-ts.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/africastalking-ts/)
-
-> The wrapper provides convenient access to the Africa's Talking API from applications written for Node.js.
+# africastalking-ts
 
 ## Install
-
-You can install the package from [npm](npmjs.com/package/africastalking) by running:
 
 ```bash
 npm i africastalking-ts
 ```
 
-### Using with Typescript
-
-This package comes with Typescript support out of the box.
-
-## Initialize the AfricasTalking Client
-
-You need your app username and your API key to create a new AfricasTalking Client, both of which you can get from the [dashboard](https://account/africastalking.com).
-
-> You can use this SDK for either production or sandbox apps. For sandbox, the app username is **ALWAYS** `sandbox`
-
-```javascript
-import { Client } from 'africastalking-ts'; // const { Client } = require('africastalking-ts');
-
-const client = new Client({
-    apiKey: 'YOUR_API_KEY', // use your sandbox app API key for development in the test environment
-    username: 'YOUR_USERNAME', // use 'sandbox' for development in the test environment
-});
-```
-
 ## Quick Start Example - Send SMS
 
-This example creates an AfricasTalking Client, and sends an SMS to two phone numbers.
+This example creates an Africa's Talking Client, and sends an SMS to two phone numbers.
 
 ```ts
 import { Client } from 'africastalking-ts';
 
-// Instantiate the AfricasTalking client
 const client = new Client({
-    apiKey: 'YOUR_API_KEY', // use your sandbox app API key for development in the test environment
-    username: 'YOUR_USERNAME', // use 'sandbox' for development in the test environment
+    apiKey: 'YOUR_API_KEY', // you can get this from the dashboard: https://account.africastalking.com
+    username: 'YOUR_USERNAME', // use 'sandbox' as the value for development in the test environment
 });
 
-// Send message and capture the response or error
 client.sendSms({
     to: ['+254711XXXZZZ', '+254733YYYZZZ'],
-    message: "I'm a lumberjack and its ok, I work all night and sleep all day"
+    message: 'Hello world',
 })
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
 ```
 
-See [example](example/) for more usage examples.
+## Links
 
-## API Reference
-
-The complete API Reference is [available here](./API.md).
-
-## Notes
-
-### v1.0.0: breaking version
-
-Please note `v1.0.0` is a breaking version. It greatly changes its usage, and you will need to update your codebase to avoid errors.
-
-```js
-const credentials = { apiKey: 'xxxx', username: 'xxxx' };
-```
-
-```js
-// previously:
-const africastalking = require('africastalking-ts')(credentials);
-const sms = africastalking.SMS;
-sms.send({
-    // options
-});
-
-// now:
-import { Client } from 'africastalking-ts'; // const { Client } = require('africastalking-ts');
-const client = new Client(credentials);
-client.sendSms({
-    // options
-});
-```
-
-You can find the complete list of new function names [here](./API.md).
-
-However, we understand that updating the bulk of your code can be tedious, so we have given you a way to incrementally upgrade to the new version.
-
-To use the new version, whilst still keeping the old function calls, you only need to update your require statements as follows (**the key word is `.default`**):
-
-```js
-const africastalking = require('africastalking-ts').default(credentials);
-const sms = africastalking.SMS;
-sms.send({
-    // options
-});
-```
-
-However, please note that even this way is altogether being deprecated and will be removed in future versions. Kindly make an effort to rewrite your codebase using the newer syntax.
-
-Alternatively, you can use an older version of the package in your codebase, but this may expose you to certain vulnerabilities.
+- [SDK Reference](./DOCS.md) (methods, constants, types for Typescript, etc)
+- [Code examples](example/)
+- [Rest API Reference](http://docs.africastalking.com)
 
 ## Development
 
@@ -128,4 +53,8 @@ npm run build
 
 ## Issues
 
-If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/AfricasTalkingLtd/africastalking-node.js/issues).
+If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/tawn33y/africastalking-ts/issues).
+
+## Pull Requests
+
+Any and all PRs are open.

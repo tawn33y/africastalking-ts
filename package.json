@@ -1,7 +1,7 @@
 {
   "name": "africastalking-ts",
   "version": "0.0.1",
-  "description": "Typesccript wrapper around the Africa's Talking node.js SDK",
+  "description": "Unofficial Typesccript version of the Africa's Talking node.js SDK",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
@@ -50,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AfricasTalkingLtd/africastalking-node.js"
+    "url": "git@github.com:tawn33y/africastalking-ts.git"
   },
   "keywords": [
     "africastalking",
@@ -69,10 +69,10 @@
   "author": "Tony (https://twitter.com/tawn33y)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AfricasTalkingLtd/africastalking-node.js/issues"
+    "url": "https://github.com/tawn33y/africastalking-ts/issues"
   },
-  "homepage": "https://github.com/AfricasTalkingLtd/africastalking-node.js#readme",
+  "homepage": "https://github.com/tawn33y/africastalking-ts#readme",
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   }
 }
