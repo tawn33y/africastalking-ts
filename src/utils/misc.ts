@@ -41,7 +41,7 @@ export const showDeprecationWarning = (
   oldFunctionName: string,
   newFunctionName: string | undefined,
   releaseType: 'minor' | 'major' = 'major',
-  link: string = 'https://github.com/tawn33y/africastalking-ts/README.md#note-this-is-a-breaking-version',
+  link: string = 'https://github.com/tawn33y/africastalking-ts/blob/main/README.md#note-this-is-a-breaking-version',
 ): void => {
   const header = '\nDeprecation warning:';
 
