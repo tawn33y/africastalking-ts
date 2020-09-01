@@ -1,0 +1,10 @@
+{
+  "apiKey": "your-api-key",
+  "username": "your-username",
+  "chat": {
+    "productId": "your-product-id",
+    "channel": "whatsapp",
+    "from": "+2547XXXXXXXX",
+    "to": "+2547XXXXXXXX"
+  }
+}
