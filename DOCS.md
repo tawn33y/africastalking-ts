@@ -4,7 +4,7 @@
 
 - [What can I import from the SDK?](#What-can-i-import-from-the-sdk)
 - [Initializing a Client](#initializing-a-client)
-- [Client Methods](#client-methods)
+- [Client Functionss](#client-functions)
 
 ## What can I import from the SDK?
 
@@ -25,7 +25,7 @@ const { Client, ActionBuilder, CONSTANTS, SmsResponse, SendAirtimeResponse } = r
 
 ### Notes
 
-- All methods are asynchronous.
+- All functions are asynchronous.
 - All phone numbers use the international format. e.g. `+254xxxxxxxx`.
 
 ## Initializing a Client
@@ -43,7 +43,7 @@ const client = new Client({
 });
 ```
 
-## Client Methods
+## Client Functions
 
 - [Airtime Operations](#a-airtime-operations)
   - sendAirtimeRequest

@@ -29,7 +29,7 @@ client.sendSms({
 ## Links
 
 - [SDK Reference](./DOCS.md) (available functions, constants, types for Typescript, etc)
-- [Code examples](example/)
+- [Code examples](examples/)
 - [Rest API Reference](http://docs.africastalking.com)
 
 ## Development
