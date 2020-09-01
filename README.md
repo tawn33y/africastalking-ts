@@ -6,7 +6,7 @@
 npm i africastalking-ts
 ```
 
-## Quick Start Example - Send SMS
+## Quick Start Example: Send an SMS
 
 This example creates an Africa's Talking Client, and sends an SMS to two phone numbers.
 
@@ -19,7 +19,7 @@ const client = new Client({
 });
 
 client.sendSms({
-    to: ['+254711XXXZZZ', '+254733YYYZZZ'],
+    to: ['+254xxxxxxxx', '+254yyyyyyyy'],
     message: 'Hello world',
 })
     .then((response) => console.log(response))
@@ -28,7 +28,7 @@ client.sendSms({
 
 ## Links
 
-- [SDK Reference](./DOCS.md) (methods, constants, types for Typescript, etc)
+- [SDK Reference](./DOCS.md) (available functions, constants, types for Typescript, etc)
 - [Code examples](example/)
 - [Rest API Reference](http://docs.africastalking.com)
 

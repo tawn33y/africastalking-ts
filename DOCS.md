@@ -2,30 +2,31 @@
 
 ## Contents
 
-- [What can I import from the package?](#What-can-i-import-from-the-package)
-- [Initialize the Africa's Talking Client](#initializing-a-client)
+- [What can I import from the SDK?](#What-can-i-import-from-the-sdk)
+- [Initializing a Client](#initializing-a-client)
 - [Client Methods](#client-methods)
 
-## What can I import from the package?
+## What can I import from the SDK?
 
-You can import the following functions, classes and Typescript types from the package:
+You can import the following functions, classes and Typescript types from the SDK:
 
 - Client
-- ActionBuilder
-- CONSTANTS
-- Types for Typescript e.g. `SmsResponse`, `SendAirtimeResponse`, etc;
+- ActionBuilder (for Voice)
+- CONSTANTS (for Payments)
+- Types for Typescript e.g. `SmsResponse`, `SendAirtimeResponse`, etc.
 
 ```ts
 import { Client, ActionBuilder, CONSTANTS, SmsResponse, SendAirtimeResponse } from 'africastalking-ts';
 
 // or
+
 const { Client, ActionBuilder, CONSTANTS, SmsResponse, SendAirtimeResponse } = require('africastalking-ts').
 ```
 
 ### Notes
 
 - All methods are asynchronous.
-- All phone numbers use the international format. e.g. `+234xxxxxxxx`.
+- All phone numbers use the international format. e.g. `+254xxxxxxxx`.
 
 ## Initializing a Client
 
@@ -37,8 +38,8 @@ You need your app username and your API key to create a new Africa's Talking Cli
 import { Client } from 'africastalking-ts'; // const { Client } = require('africastalking-ts');
 
 const client = new Client({
-    apiKey: 'YOUR_API_KEY', // use your sandbox app API key for development in the test environment
-    username: 'YOUR_USERNAME', // use 'sandbox' for development in the test environment
+    apiKey: 'YOUR_API_KEY', // you can get this from the dashboard: https://account.africastalking.com
+    username: 'YOUR_USERNAME', // use 'sandbox' as the value for development in the test environment
 });
 ```
 
