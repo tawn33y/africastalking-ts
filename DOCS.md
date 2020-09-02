@@ -4,7 +4,7 @@
 
 - [What can I import from the SDK?](#What-can-i-import-from-the-sdk)
 - [Initializing a Client](#initializing-a-client)
-- [Client Functionss](#client-functions)
+- [Client Functions](#client-functions)
 
 ## What can I import from the SDK?
 
@@ -45,20 +45,20 @@ const client = new Client({
 
 ## Client Functions
 
-- [Airtime Operations](#a-airtime-operations)
+- [Airtime Operations](#airtime-operations)
   - sendAirtimeRequest
 
-- [Application Operations](#b-application-operations)
+- [Application Operations](#application-operations)
   - fetchApplicationData
 
-- [Chat Operations](#b-chat-operations)
+- [Chat Operations](#chat-operations)
   - sendChatOptIn
   - sendChatTemplateMessage
   - sendChatTextMessage
   - sendChatMediaMessage
   - sendChatLocationMessage
 
-- [Payments Operations](#c-payments-operations)
+- [Payments Operations](#payments-operations)
   - topupStash
   - walletTransfer
   
@@ -83,7 +83,7 @@ const client = new Client({
   - fetchWalletTransactions
   - findTransaction
 
-- [SMS Operations](#d-sms-operations)
+- [SMS Operations](#sms-operations)
   - fetchMessages
   - sendSms
   - sendPremiumSms
@@ -93,11 +93,11 @@ const client = new Client({
   - deleteSubscription
   - fetchSubscription
 
-- [Token Operations](#e-token-operations)
+- [Token Operations](#token-operations)
   - createCheckoutToken
   - generateAuthToken
 
-- [Voice Operations](#f-voice-operations)
+- [Voice Operations](#voice-operations)
   - getNumQueuedCalls
   - makeCall
   - uploadMediaFile

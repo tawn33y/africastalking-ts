@@ -94,10 +94,6 @@ However, please note that even this way is altogether being deprecated and will 
 
 Alternatively, you can just use the Javascript version of the SDK in your codebase.
 
-## Issues
-
-If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/tawn33y/africastalking-ts/issues).
-
 ## Pull Requests
 
 Any and all PRs are open.

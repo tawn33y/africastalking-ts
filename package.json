@@ -1,6 +1,6 @@
 {
   "name": "africastalking-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Unofficial Typescript version of the Africa's Talking SDK",
   "main": "dist/index.js",
   "scripts": {

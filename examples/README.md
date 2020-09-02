@@ -1,4 +1,4 @@
-# README
+# Code Examples
 
 ```sh
 # create your custom config with env vars
