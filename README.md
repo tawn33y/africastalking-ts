@@ -2,6 +2,14 @@
 
 Unofficial Typescript version of the Africa's Talking SDK
 
+<hr>
+
+## ℹ️ Status
+
+This project is now **Archived**. Please [read more here](https://github.com/tawn33y/africastalking-ts/issues/23).
+
+<hr>
+
 ## Install
 
 ```bash
